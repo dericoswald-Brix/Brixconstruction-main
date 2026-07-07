@@ -105,6 +105,10 @@
   .navlinks a{ font-size:14px; font-weight:500; transition:.2s; }
   body[data-brand="build"] .navlinks a{ color:rgba(255,255,255,.82); } body[data-brand="build"] .navlinks a:hover{ color:#fff; }
   body[data-brand="interiors"] .navlinks a{ color:rgba(44,36,28,.8); }
+  .navlink-blog{ font-size:14px; font-weight:500; transition:.2s; }
+  body[data-brand="build"] .navlink-blog{ color:rgba(255,255,255,.82); } body[data-brand="build"] .navlink-blog:hover{ color:#fff; }
+  body[data-brand="interiors"] .navlink-blog{ color:rgba(44,36,28,.8); } body[data-brand="interiors"] .navlink-blog:hover{ color:var(--espresso); }
+  @media (max-width:860px){ .navlink-blog{ display:none; } }
   .cta{ border:none; cursor:pointer; font-size:14px; font-weight:600; padding:10px 22px; border-radius:999px; transition:.25s; }
   body[data-brand="build"] .cta{ background:#fff; color:#111; } body[data-brand="build"] .cta:hover{ background:#eee; }
   body[data-brand="interiors"] .cta{ background:var(--espresso); color:var(--sand); }
@@ -287,6 +291,7 @@
         <a href="#why">Why Brix</a>
         <a href="#contact">Contact</a>
       </div>
+      <a href="/blog/" class="navlink-blog">Blog</a>
       <button class="cta" id="ctaBtn" onclick="goContact()">Get a Quote</button>
     </div>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -299,6 +304,7 @@
     <a href="#scope" onclick="toggleMenu()">What's Included</a>
     <a href="#why" onclick="toggleMenu()">Why Brix</a>
     <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="/blog/">Blog</a>
   </div>
 
   <div id="top"></div>
@@ -444,6 +450,7 @@
           <a href="#packages" onclick="setBrand('build')">Premium · ₹2,200</a>
           <a href="#packages" onclick="setBrand('build')">Luxury · ₹2,500</a>
           <a href="#scope" onclick="setBrand('build')">What's included</a>
+          <a href="/blog/">Blog</a>
         </div>
         <div class="f-col">
           <h5>Interiors</h5>
